@@ -492,7 +492,7 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
                 <button
                   type="submit"
-                  className="bg-primary cursor-pointer text-white px-4 py-2 rounded hover:opacity-90 transition-opacity disabled:opacity-50"
+                  className="bg-primary cursor-pointer text-white bg-gray-900 px-4 py-2 rounded hover:opacity-90 transition-opacity disabled:opacity-50"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
@@ -582,7 +582,7 @@ const Home = () => {
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mt-4">
                 <button
                   type="submit"
-                  className="bg-primary text-white px-4 py-2 rounded hover:opacity-90 transition-opacity disabled:opacity-50"
+                  className="bg-primary text-white bg-gray-800 px-4 py-2 rounded hover:opacity-90 transition-opacity disabled:opacity-50"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Requesting..." : "Request Booking"}

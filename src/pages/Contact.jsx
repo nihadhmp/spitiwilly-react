@@ -119,7 +119,7 @@ const Contact = () => {
                 <div className="flex flex-col sm:flex-row items-center gap-3">
                   <button
                     type="submit"
-                    className="bg-primary text-black px-4 py-2 rounded hover:opacity-90 transition-opacity disabled:opacity-50"
+                    className="bg-primary text-black bg-gray-100 px-4 py-2 rounded hover:opacity-90 transition-opacity disabled:opacity-50"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}
