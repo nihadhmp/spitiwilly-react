@@ -1,10 +1,10 @@
 @import "tailwindcss";
 
-@theme {
+/* @theme {
   --color-primary: #10B981;
   --color-accent: #FFFFFF;
   --font-sans: "Inter", ui-sans-serif, system-ui;
-}
+} */
 
 /* small extras */
 .hero-bg {
