@@ -87,15 +87,17 @@ const Pricing = () => {
             </div>
           </div>
 
-          <section className="mt-10 bg-gray-900 p-6 rounded-lg text-gray-300">
-            <h3 className="text-xl font-semibold">What's included</h3>
+          <section className="mt-10 bg-gray-900 p-4 sm:p-6 rounded-lg text-gray-300">
+            <h3 className="text-lg sm:text-xl font-semibold">
+              What's included
+            </h3>
             <div className="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-sm sm:text-base">
                 <li>• High-speed Wi‑Fi</li>
                 <li>• Utilities</li>
                 <li>• Weekly housekeeping</li>
               </ul>
-              <ul className="space-y-2">
+              <ul className="space-y-2 text-sm sm:text-base">
                 <li>• Access to community events</li>
                 <li>• Coworking spaces</li>
                 <li>• Lockers & security</li>

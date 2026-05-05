@@ -19,9 +19,11 @@ const Header = ({ currentPage }) => {
     <header className="bg-black/70 backdrop-blur sticky top-0 z-40 shadow-sm">
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center gap-3">
+          <Link to="/" className="flex items-center gap-2 sm:gap-3">
             <div>
-              <div className="text-2xl text-primary font-bold">Spitiwilly</div>
+              <div className="text-xl sm:text-2xl text-primary font-bold">
+                Spitiwilly
+              </div>
               <div className="text-xs text-gray-400">
                 Co.Living — Thiruvannur
               </div>
@@ -47,7 +49,7 @@ const Header = ({ currentPage }) => {
           <div className="flex items-center gap-3">
             <Link
               to="/contact"
-              className="hidden md:inline-block bg-primary text-black px-4 py-2 rounded-md hover:opacity-95 transition-opacity duration-200"
+              className="hidden md:inline-block bg-primary text-black bg-gray-200 px-3 sm:px-4 py-2 rounded-md hover:opacity-95 transition-opacity text-sm sm:text-base"
             >
               Book Now
             </Link>
@@ -140,7 +142,7 @@ const Header = ({ currentPage }) => {
           </Link>
           <Link
             to="/contact"
-            className="inline-block bg-primary text-black px-4 py-2 rounded-md mt-2 text-center"
+            className="inline-block bg-primary text-gray-200 px-4 py-2 rounded-md mt-2 text-center hover:opacity-90 transition-opacity"
           >
             Book Now
           </Link>

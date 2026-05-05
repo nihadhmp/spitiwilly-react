@@ -158,15 +158,15 @@ const Home = () => {
         <section id="home" className="hero-bg min-h-[60vh] flex items-center">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
             <div className="max-w-3xl text-left">
-              <h1 className="text-4xl sm:text-5xl font-extrabold leading-tight text-left">
+              <h1 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold leading-tight text-left">
                 Connect. Co-Live. Grow. Spitiwilly Co.Living.
               </h1>
-              <p className="mt-4 text-lg sm:text-xl text-white/90 text-left">
+              <p className="mt-4 text-base sm:text-lg lg:text-xl text-white/90 text-left">
                 A premium, youthful coliving community in Thiruvannur, Calicut —
                 private rooms, fast Wi‑Fi, coworking and evenings that build
                 networks.
               </p>
-              <p className="mt-4 text-white/80 text-left">
+              <p className="mt-4 text-sm sm:text-base text-white/80 text-left">
                 Evenings dedicated to stranger travel tales, career experience
                 sharing, and network growth — our calendar is designed to help
                 you meet, learn and grow.
@@ -174,18 +174,18 @@ const Home = () => {
               <div className="mt-6 flex flex-col sm:flex-row gap-3 justify-start">
                 <Link
                   to="/contact"
-                  className="bg-primary text-black px-4 py-2 rounded-md font-medium text-center"
+                  className="bg-primary text-black px-4 py-2 rounded-md font-medium text-center hover:opacity-90 transition-opacity"
                 >
                   Book Your Stay
                 </Link>
                 <Link
                   to="/community"
-                  className="border border-white/70 text-white px-4 py-2 rounded-md text-center"
+                  className="border border-white/70 text-white px-4 py-2 rounded-md text-center hover:bg-white/10 transition-colors"
                 >
                   Community Events
                 </Link>
               </div>
-              <div className="mt-6 text-sm text-white/80 text-left">
+              <div className="mt-6 text-xs sm:text-sm text-white/80 text-left">
                 Monthly stays · Short-term stays · Community events
               </div>
             </div>
@@ -296,32 +296,32 @@ const Home = () => {
           className="max-w-6xl mx-auto px-4 sm:px-6 py-10 sm:py-12"
         >
           <h3 className="text-2xl font-bold text-left">Amenities</h3>
-          <div className="mt-6 grid grid-cols-2 xs:grid-cols-3 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
-            <div className="p-4 bg-gray-600 rounded shadow flex flex-col items-center">
-              <FaWifi />
-              <div className="text-sm mt-2">High-speed Wi‑Fi</div>
+          <div className="mt-6 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4 text-center">
+            <div className="p-3 sm:p-4 bg-gray-600 rounded shadow flex flex-col items-center">
+              <FaWifi className="text-lg sm:text-xl" />
+              <div className="text-xs sm:text-sm mt-2">High-speed Wi‑Fi</div>
             </div>
-            <div className="p-4 bg-gray-600 rounded shadow flex flex-col items-center">
-              <LuWashingMachine />
+            <div className="p-3 sm:p-4 bg-gray-600 rounded shadow flex flex-col items-center">
+              <LuWashingMachine className="text-lg sm:text-xl" />
 
-              <div className="text-sm mt-2">Laundry</div>
+              <div className="text-xs sm:text-sm mt-2">Laundry</div>
             </div>
-            <div className="p-4 bg-gray-600 rounded shadow flex flex-col items-center">
-              <TbToolsKitchen3 />
+            <div className="p-3 sm:p-4 bg-gray-600 rounded shadow flex flex-col items-center">
+              <TbToolsKitchen3 className="text-lg sm:text-xl" />
 
-              <div className="text-sm mt-2">Shared Kitchen</div>
+              <div className="text-xs sm:text-sm mt-2">Shared Kitchen</div>
             </div>
-            <div className="p-4 bg-gray-600 rounded shadow flex flex-col items-center">
-              <FaLaptopCode />
-              <div className="text-sm mt-2">Co-working</div>
+            <div className="p-3 sm:p-4 bg-gray-600 rounded shadow flex flex-col items-center">
+              <FaLaptopCode className="text-lg sm:text-xl" />
+              <div className="text-xs sm:text-sm mt-2">Co-working</div>
             </div>
-            <div className="p-4 bg-gray-600 rounded shadow flex flex-col items-center">
-              <FaLock />
-              <div className="text-sm mt-2">Lockers</div>
+            <div className="p-3 sm:p-4 bg-gray-600 rounded shadow flex flex-col items-center">
+              <FaLock className="text-lg sm:text-xl" />
+              <div className="text-xs sm:text-sm mt-2">Lockers</div>
             </div>
-            <div className="p-4 bg-gray-600 rounded shadow flex flex-col items-center">
-              <MdGroups />
-              <div className="text-sm mt-2">Community Lounge</div>
+            <div className="p-3 sm:p-4 bg-gray-600 rounded shadow flex flex-col items-center">
+              <MdGroups className="text-lg sm:text-xl" />
+              <div className="text-xs sm:text-sm mt-2">Community Lounge</div>
             </div>
           </div>
         </section>
@@ -335,21 +335,21 @@ const Home = () => {
             <p className="text-gray-800 mt-2 text-left">
               A quick peek at community spaces and rooms.
             </p>
-            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="mt-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <img
-                className="cursor-pointer  rounded-lg object-cover h-40 w-full gallery-item"
+                className="cursor-pointer rounded-lg object-cover h-48 sm:h-40 w-full gallery-item hover:opacity-90 transition-opacity"
                 src={gallery1}
                 alt="img1"
                 onClick={() => handleGalleryClick(gallery1)}
               />
               <img
-                className="cursor-pointer rounded-lg object-cover h-40 w-full gallery-item"
+                className="cursor-pointer rounded-lg object-cover h-48 sm:h-40 w-full gallery-item hover:opacity-90 transition-opacity"
                 src={gallery2}
                 alt="img2"
                 onClick={() => handleGalleryClick(gallery2)}
               />
               <img
-                className="cursor-pointer rounded-lg object-cover h-40 w-full gallery-item"
+                className="cursor-pointer rounded-lg object-cover h-48 sm:h-40 w-full gallery-item hover:opacity-90 transition-opacity"
                 src={gallery3}
                 alt="img3"
                 onClick={() => handleGalleryClick(gallery3)}
@@ -380,7 +380,7 @@ const Home = () => {
 
         {/* Contact */}
         <section id="contact" className="bg-gray-200 py-10 sm:py-12">
-          <div className="max-w-3xl mx-auto px-4 sm:px-6">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6">
             <h3 className="text-2xl text-gray-900 font-bold text-left">
               Contact, Enquiries & Booking
             </h3>
@@ -394,30 +394,32 @@ const Home = () => {
               className="mt-6 grid grid-cols-1 gap-4 w-full text-left"
               onSubmit={handleContactSubmit}
             >
-              <input
-                id="name"
-                name="name"
-                type="text"
-                placeholder="Your name"
-                className="border rounded px-3 py-2 text-left text-gray-900"
-                value={contactData.name}
-                onChange={handleContactChange}
-              />
-              <input
-                id="email"
-                name="email"
-                type="email"
-                placeholder="Email"
-                className="border rounded px-3 py-2 text-left text-gray-900"
-                value={contactData.email}
-                onChange={handleContactChange}
-              />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <input
+                  id="name"
+                  name="name"
+                  type="text"
+                  placeholder="Your name"
+                  className="border rounded px-3 py-2 text-left text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
+                  value={contactData.name}
+                  onChange={handleContactChange}
+                />
+                <input
+                  id="email"
+                  name="email"
+                  type="email"
+                  placeholder="Email"
+                  className="border rounded px-3 py-2 text-left text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
+                  value={contactData.email}
+                  onChange={handleContactChange}
+                />
+              </div>
               <input
                 id="phone"
                 name="phone"
                 type="tel"
                 placeholder="Phone (optional)"
-                className="border rounded px-3 py-2 text-left text-gray-900"
+                className="border rounded px-3 py-2 text-left text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
                 value={contactData.phone}
                 onChange={handleContactChange}
               />
@@ -426,7 +428,7 @@ const Home = () => {
               <select
                 id="purpose"
                 name="purpose"
-                className="border rounded px-3 py-2 text-left text-gray-900"
+                className="border rounded px-3 py-2 text-left text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
                 value={contactData.purpose}
                 onChange={handlePurposeChange}
               >
@@ -451,7 +453,7 @@ const Home = () => {
                       id="checkin"
                       name="checkin"
                       type="date"
-                      className="border rounded px-3 py-2 text-left text-gray-900"
+                      className="border rounded px-3 py-2 text-left text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
                       value={contactData.checkin}
                       onChange={handleContactChange}
                     />
@@ -459,7 +461,7 @@ const Home = () => {
                       id="checkout"
                       name="checkout"
                       type="date"
-                      className="border rounded px-3 py-2 text-left text-gray-900"
+                      className="border rounded px-3 py-2 text-left text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
                       value={contactData.checkout}
                       onChange={handleContactChange}
                     />
@@ -467,7 +469,7 @@ const Home = () => {
                   <select
                     id="room-type"
                     name="room_type"
-                    className="border rounded px-3 py-2 text-left text-gray-900"
+                    className="border rounded px-3 py-2 text-left text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
                     value={contactData.room_type}
                     onChange={handleContactChange}
                   >
@@ -483,14 +485,14 @@ const Home = () => {
                 name="message"
                 rows="4"
                 placeholder="Message / special requests"
-                className="border rounded px-3 py-2 text-left text-gray-900"
+                className="border rounded px-3 py-2 text-left text-gray-900 focus:outline-none focus:ring-2 focus:ring-primary"
                 value={contactData.message}
                 onChange={handleContactChange}
               ></textarea>
               <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
                 <button
                   type="submit"
-                  className="bg-primary cursor-pointer text-white px-4 py-2 rounded"
+                  className="bg-primary cursor-pointer text-white px-4 py-2 rounded hover:opacity-90 transition-opacity disabled:opacity-50"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Sending..." : "Send Message"}
@@ -498,7 +500,7 @@ const Home = () => {
                 {/* <button
                   id="book-open"
                   type="button"
-                  className="bg-white cursor-pointer text-primary px-4 py-2 rounded"
+                  className="bg-white cursor-pointer text-primary px-4 py-2 rounded hover:bg-gray-50 transition-colors"
                   onClick={openBookingModal}
                 >
                   Quick Book
@@ -515,16 +517,18 @@ const Home = () => {
             isBookingModalOpen ? "flex" : "hidden"
           }`}
         >
-          <div className="bg-white rounded-lg max-w-md w-full p-4 sm:p-6">
+          <div className="bg-white rounded-lg max-w-md w-full mx-4 p-4 sm:p-6">
             <button
               id="booking-close"
-              className="float-right text-gray-600"
+              className="float-right text-gray-600 hover:text-gray-800 text-xl"
               onClick={closeBookingModal}
             >
               ✕
             </button>
-            <h4 className="text-lg font-bold mt-2 text-left">Quick Booking</h4>
-            <p className="text-sm text-gray-600 text-left">
+            <h4 className="text-lg sm:text-xl font-bold mt-2 text-left">
+              Quick Booking
+            </h4>
+            <p className="text-sm text-gray-600 text-left mt-1">
               Fill these details and we'll get back with availability.
             </p>
             <form
@@ -533,52 +537,52 @@ const Home = () => {
               onSubmit={handleBookingSubmit}
             >
               <input
-                name="bk_name"
+                name="name"
                 type="text"
                 placeholder="Full name"
-                className="border rounded px-3 py-2 text-left"
+                className="border rounded px-3 py-2 text-left focus:outline-none focus:ring-2 focus:ring-primary"
                 value={bookingData.name}
                 onChange={handleBookingChange}
                 required
               />
               <input
-                name="bk_email"
+                name="email"
                 type="email"
                 placeholder="Email"
-                className="border rounded px-3 py-2 text-left"
+                className="border rounded px-3 py-2 text-left focus:outline-none focus:ring-2 focus:ring-primary"
                 value={bookingData.email}
                 onChange={handleBookingChange}
                 required
               />
               <input
-                name="bk_phone"
+                name="phone"
                 type="tel"
                 placeholder="Phone"
-                className="border rounded px-3 py-2 text-left"
+                className="border rounded px-3 py-2 text-left focus:outline-none focus:ring-2 focus:ring-primary"
                 value={bookingData.phone}
                 onChange={handleBookingChange}
               />
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 <input
-                  name="bk_checkin"
+                  name="checkin"
                   type="date"
-                  className="border rounded px-3 py-2 text-left"
+                  className="border rounded px-3 py-2 text-left focus:outline-none focus:ring-2 focus:ring-primary"
                   value={bookingData.checkin}
                   onChange={handleBookingChange}
                 />
                 <input
-                  name="bk_checkout"
+                  name="checkout"
                   type="date"
-                  className="border rounded px-3 py-2 text-left"
+                  className="border rounded px-3 py-2 text-left focus:outline-none focus:ring-2 focus:ring-primary"
                   value={bookingData.checkout}
                   onChange={handleBookingChange}
                 />
               </div>
 
-              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3">
+              <div className="flex flex-col sm:flex-row items-start sm:items-center gap-3 mt-4">
                 <button
                   type="submit"
-                  className="bg-primary text-white px-4 py-2 rounded"
+                  className="bg-primary text-white px-4 py-2 rounded hover:opacity-90 transition-opacity disabled:opacity-50"
                   disabled={isSubmitting}
                 >
                   {isSubmitting ? "Requesting..." : "Request Booking"}
@@ -589,7 +593,7 @@ const Home = () => {
         </div>
 
         {/* Book CTA */}
-        <section id="book" className="bg-primary text-white py-10 sm:py-12">
+        <section id="book" className="bg-primary py-10 sm:py-12">
           <div className="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col md:flex-row items-start md:items-center justify-between gap-4">
             <div className="text-left">
               <h4 className="text-xl font-bold text-left">
@@ -602,7 +606,7 @@ const Home = () => {
             </div>
             <Link
               to="/contact"
-              className="mt-2 md:mt-0 bg-white text-primary px-4 py-2 rounded text-center"
+              className="mt-2 md:mt-0 text-gray-700 bg-white text-primary px-4 py-2 rounded text-center"
             >
               Enquire Now
             </Link>
@@ -619,7 +623,7 @@ const Home = () => {
       >
         <button
           id="gallery-close"
-          className="absolute top-4 right-4 text-white text-2xl md:top-6 md:right-6"
+          className="absolute top-4 right-4 text-white text-2xl hover:text-gray-300 transition-colors z-10"
           onClick={closeGalleryModal}
         >
           ✕
@@ -628,7 +632,7 @@ const Home = () => {
           id="gallery-full"
           src={modalImageSrc}
           alt="full"
-          className="max-h-[80vh] max-w-full rounded shadow-lg object-contain"
+          className="max-h-[80vh] max-w-[90vw] sm:max-w-full rounded shadow-lg object-contain"
         />
       </div>
 

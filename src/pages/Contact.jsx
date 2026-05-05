@@ -75,32 +75,34 @@ const Contact = () => {
                 className="mt-6 grid grid-cols-1 gap-4 w-full"
                 onSubmit={handleSubmit}
               >
-                <input
-                  id="name"
-                  name="name"
-                  type="text"
-                  placeholder="Your name"
-                  className="border rounded px-3 py-2 bg-gray-900 text-gray-100"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                />
-                <input
-                  id="email"
-                  name="email"
-                  type="email"
-                  placeholder="Email"
-                  className="border rounded px-3 py-2 bg-gray-900 text-gray-100"
-                  value={formData.email}
-                  onChange={handleChange}
-                  required
-                />
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <input
+                    id="name"
+                    name="name"
+                    type="text"
+                    placeholder="Your name"
+                    className="border rounded px-3 py-2 bg-gray-900 text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
+                    value={formData.name}
+                    onChange={handleChange}
+                    required
+                  />
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    placeholder="Email"
+                    className="border rounded px-3 py-2 bg-gray-900 text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
+                    value={formData.email}
+                    onChange={handleChange}
+                    required
+                  />
+                </div>
                 <input
                   id="phone"
                   name="phone"
                   type="tel"
                   placeholder="Phone"
-                  className="border rounded px-3 py-2 bg-gray-900 text-gray-100"
+                  className="border rounded px-3 py-2 bg-gray-900 text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
                   value={formData.phone}
                   onChange={handleChange}
                 />
@@ -109,7 +111,7 @@ const Contact = () => {
                   name="message"
                   rows="5"
                   placeholder="Message"
-                  className="border rounded px-3 py-2 bg-gray-900 text-gray-100"
+                  className="border rounded px-3 py-2 bg-gray-900 text-gray-100 focus:outline-none focus:ring-2 focus:ring-primary"
                   value={formData.message}
                   onChange={handleChange}
                   required
@@ -117,7 +119,7 @@ const Contact = () => {
                 <div className="flex flex-col sm:flex-row items-center gap-3">
                   <button
                     type="submit"
-                    className="bg-primary text-black px-4 py-2 rounded"
+                    className="bg-primary text-black px-4 py-2 rounded hover:opacity-90 transition-opacity disabled:opacity-50"
                     disabled={isSubmitting}
                   >
                     {isSubmitting ? "Sending..." : "Send Message"}

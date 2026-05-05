@@ -55,24 +55,24 @@ const Community = () => {
 
           <section className="mt-10">
             <h2 className="text-2xl font-semibold">Gallery</h2>
-            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+            <div className="mt-4 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
               <img
                 src={gallery1}
-                className="h-40 w-full object-cover rounded-lg cursor-pointer"
+                className="h-48 sm:h-40 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                 alt="gallery1"
                 onClick={() => handleGalleryClick(gallery1)}
               />
               <img
                 src={gallery2}
-                className="h-40 w-full object-cover rounded-lg cursor-pointer"
+                className="h-48 sm:h-40 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                 alt="gallery2"
                 onClick={() => handleGalleryClick(gallery2)}
               />
               <img
                 src={gallery3}
-                className="h-40 w-full object-cover rounded-lg cursor-pointer"
+                className="h-48 sm:h-40 w-full object-cover rounded-lg cursor-pointer hover:opacity-90 transition-opacity"
                 alt="gallery3"
-                onClick={() => handleGalleryClick("../assets/gallery3.svg")}
+                onClick={() => handleGalleryClick(gallery3)}
               />
             </div>
           </section>
